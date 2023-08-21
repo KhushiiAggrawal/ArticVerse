@@ -1,13 +1,268 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root{
+    --newbg: rgb(2, 2, 27);
+    --bgcolor: rgb(25, 21, 33);
+    --innerbg:black;
+    --text:white;
+    --lighttext:rgb(152, 150, 150);
+    --blue:#009eff;
+    --darkBlue:#0782cf;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+    margin:0 ;
+    padding: 0;
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+#root{
+    width: 100%;
+    height: 100%;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+    margin:0;
+    position: relative;
+    /* background-image: url("images/bg.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center center ;   */
+    /* padding: 2rem; */
+    background-color: var(--newbg);   
+}
+img{
+    position: absolute;
+    right: -5rem;
+    bottom: 2rem;
+    /* border:1px solid red; */
+    height: 12rem;
+    opacity: 0.5;
+    margin: 0%;
+    filter:invert(1);
+    transform:rotate(330deg)  scale(0.75);
+}
+.content{
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    gap: 2rem;
+    padding: 1.5rem 0 0 2rem;    
+    align-items: center ; 
+    position: relative;
+}
+.nav{
+    display: flex;
+    gap: 5rem;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+.nav p{
+    color: var(--text);
+}
+.appname{
+    display: flex;
+    gap:0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.appname p{
+    font-weight: 900;
+}
+
+.main{
+    padding: 0 0 3rem 2rem ;
+    height: 80%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.LoginMain{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem 4rem;
+    margin: 3rem 0;
+}
+.LoginMain #googleLoginBtn{
+    padding: 0.75rem;
+    font-size: 0.8rem;
+    width: 100%;
+    outline: 2px solid var(--blue);
+    color: white;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+h5{
+    width: 100%;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    flex-direction: row;
+    margin: 1rem 0 0 0;
+    gap: 0.5rem;
+}
+h5:before,h5:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 0.8px solid white;
+    margin: auto;
+}
+p{
+    color: var(--lighttext);
+    font-size: 0.8rem ;
+    font-weight: 700;
+}
+.join{
+    color:  var(--lighttext);
+    font-size: 1rem;
+    font-weight: 700;
+    transition: all ease 0.3s;
+}
+.join:hover{
+    color: white;
+}
+h1{
+    color: var(--text);
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+h6{
+    font-size: 0.75rem;
+    color: var(--text);
+    margin: 0.25rem 0 2rem  0;
+    font-weight: 300;}
+
+.LoginMain h1{
+    font-size: 1.5rem;
+    margin: 1.25rem 0 0 0;
+    padding: 0;
+}
+a{
+    color: var(--blue);
+    text-decoration: none;
+}
+.LoginMain .inputs{
+    margin:1rem 0 0 0;
+    width: 100%;
+}
+
+.inputs{
+    width: fit-content;
+    display: flex;
+    margin:1rem 0 1rem 0;
+    flex-direction: column;
+    justify-self: center;
+    gap: 0.5rem;
+    
+}
+
+.name{
+    display: flex;
+    gap :0.5rem;
+    justify-content: space-between;
+}
+
+.inputDiv input{
+    background:none;   
+    color: var(--text);
+    border: none;
+    width: 6.5rem;
+    outline: none;
+    font-weight: 700;
+}
+
+.email input{
+    width: 100%;
+}
+.password input{
+    width: 100%;
+}
+.inputDiv{
+    height:2.25rem;
+    padding: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(70, 66, 82);
+    border-radius: 0.5rem;
+}
+
+.createbtn,.loginBtn{
+    height: 2.25rem;
+    width: fit-content;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    background-color: var(--blue);
+    border:none;
+    outline: none;
+    color: var(--text);
+    transition: all ease 0.3s;
+}
+.loginBtn{
+    width: 100%;
+    height: 2.5rem;
+    justify-content: center;
+    border-radius: 0.5rem;
+    margin: 1rem 0 0 0;
+    font-size: 0.9rem;
+}
+
+.createbtn:hover{
+    opacity: 0.92;
+    scale: 0.98;
+}
+
+.inputDiv:focus-within{
+    outline: 2px solid var(--blue);
+}
+
+#pwdcase{
+    font-size: 0.75rem;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-content:center;
+    width: 100%;
+    margin: 0.5rem 0 1rem 0;
+}
+#pwdcase span{
+    display: flex;
+    align-items: center;
+    gap:0.25rem;
+}
+#rememberbtn{
+    background-color: black;
+    color:#009eff;
+    border: none;
+}
+
+.form-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+.form-group label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
 }
