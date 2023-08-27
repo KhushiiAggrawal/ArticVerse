@@ -72,7 +72,7 @@ const Login = () => {
             <div id="pwdcase">
               <div className="form-group">
                 <input type="checkbox" name="remember" />
-                <label htmlFor="css">Remember me</label>
+                <label htmlFor="remember">Remember me</label>
               </div>
               <a href="no-referer" className="borderLessbtn">
                 Forgot Password ?

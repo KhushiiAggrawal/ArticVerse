@@ -272,9 +272,9 @@ a{
 
 @media(max-width:480px){
     .LoginMain{
-        width: 90%;
+        width: 95%;
         padding: 0%;
-        height: 80%;
+        height: 90%;
         margin: 4rem 0 0 0;
         justify-content: space-between;
     }
@@ -302,6 +302,7 @@ a{
         height: 3rem;
         padding: 0.75rem;
         gap: 1rem;
+        font-size: 1rem;
     }
     h6 {
         font-size: 1rem;
@@ -312,4 +313,18 @@ a{
     h5 {
         font-size: 1rem;
     }
+
+    .form-group label {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+    }
+    a{
+        font-size: 1rem;
+    }
+    #pwdcase {
+        margin: 0.2rem 0 1rem 0;
+    }
+    
+    
+    
  }
