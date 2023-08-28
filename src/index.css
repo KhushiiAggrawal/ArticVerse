@@ -398,6 +398,8 @@ body,html{
     #pwdcase {
         margin: 0.2rem 0 1rem 0;
     }
-    
+    .svgImage{
+        display: none;
+    }
     
  }
