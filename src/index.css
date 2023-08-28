@@ -312,7 +312,13 @@ a{
         width: 100%;
     }
 
-    
+    h1{
+        font-size: 2rem;
+    }
+
+    .name{
+        flex-direction: column;
+    }
     .name .inputDiv input{
         width: 40%;
     }
