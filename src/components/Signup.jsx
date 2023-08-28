@@ -19,27 +19,27 @@ const Signup = () => {
   return (
     <>
       <div className="wrapper">
-        <img alt="bgImage" src="/imageset/Dotted-Line-PNG-Picture.png" />
-        <div className="content">
-          <div className="nav">
+        <img alt="bgImage" className="svgImage" src="/imageset/Dotted-Line-PNG-Picture.png" />
+        <div className="signIncontent">
+          <div className="signInnav">
             <span className="appname">
               <i
                 className="fa-solid fa-circle fa-lg"
                 style={{ color: "#009eff" }}
               ></i>
-              <p> Artic</p>
+              <p className="signInpara"> Artic</p>
             </span>
-            <a href="no-referer" className="join">
+            <a className="atag join" href="no-referer">
               Join
             </a>
           </div>
-          <form className="main">
-            <p>START FOR FREE</p>
-            <h1>
-              Create new account<a href="no-referer">.</a>
+          <form className="signInmain">
+            <p className="signInpara" >START FOR FREE</p>
+            <h1 className="h1tag">
+              Create new account<a className="atag" href="no-referer">.</a>
             </h1>
-            <p>
-              Already A Member? <a href="no-referer">Log In</a>
+            <p className="signInpara">
+              Already A Member? <a className="atag" href="no-referer">Log In</a>
             </p>
             <div className="inputs">
               <div className="name">

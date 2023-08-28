@@ -41,7 +41,7 @@ body,html{
     /* padding: 2rem; */
     background-color: var(--newbg);   
 }
-img{
+.svgImage{
     position: absolute;
     right: -5rem;
     bottom: 2rem;
@@ -52,7 +52,7 @@ img{
     filter:invert(1);
     transform:rotate(330deg)  scale(0.75);
 }
-.content{
+.signIncontent{
     height: 100%;
     display: flex;
     flex-direction: column; 
@@ -61,14 +61,14 @@ img{
     align-items: center ; 
     position: relative;
 }
-.nav{
+.signInnav{
     display: flex;
     gap: 5rem;
     position: absolute;
     top: 2rem;
     left: 2rem;
 }
-.nav p{
+.signInnav .signInpara{
     color: var(--text);
 }
 .appname{
@@ -77,11 +77,11 @@ img{
     justify-content: center;
     align-items: center;
 }
-.appname p{
+.appname .signInpara{
     font-weight: 900;
 }
 
-.main{
+.signInmain{
     padding: 0rem 4rem;
     margin: 4rem 0;
     width: 45%;
@@ -106,7 +106,7 @@ img{
     text-align: center;
     border-radius: 0.5rem;
 }
-h5{
+.h5tag{
     width: 100%;
     font-size: 0.7rem;
     display: flex;
@@ -116,18 +116,19 @@ h5{
     margin: 1rem 0 0 0;
     gap: 0.5rem;
 }
-h5:before,h5:after{
+.h5tag:before,.h5tag:after{
     content: "";
     flex: 1 1;
     border-bottom: 0.8px solid white;
     margin: auto;
 }
-p{
+.signInpara{
     color: var(--lighttext);
     font-size: 0.8rem ;
     font-weight: 700;
 }
 .join{
+    display: none;
     color:  var(--lighttext);
     font-size: 1rem;
     font-weight: 700;
@@ -136,23 +137,23 @@ p{
 .join:hover{
     color: white;
 }
-h1{
+.h1tag{
     color: var(--text);
     font-weight: bold;
     font-size: 2.5rem;
 }
-h6{
+.h6tag{
     font-size: 0.75rem;
     color: var(--text);
     margin: 0.25rem 0 2rem  0;
     font-weight: 300;}
 
-.LoginMain h1{
+.LoginMain .h1tag{
     font-size: 1.5rem;
     margin: 1.25rem 0 0 0;
     padding: 0;
 }
-a{
+.atag{
     color: var(--blue);
     text-decoration: none;
 }
@@ -160,7 +161,7 @@ a{
     margin:1rem 0 0 0;
     width: 100%;
 }
-.main .inputs{
+.signInmain .inputs{
     margin:1rem 0 0 0;
 
 }
@@ -207,12 +208,12 @@ a{
     border-radius: 0.5rem;
 }
 
-.main .inputs{
+.signInmain .inputs{
     gap: 0.75rem;
     margin:1rem 0 1.5rem 0;
 }
 
-.main .inputDiv{
+.signInmain .inputDiv{
     height:2.5rem;
     padding: 1rem;
     gap: 1rem;
@@ -285,10 +286,10 @@ a{
 /* for mobile */
 
 @media(max-width:480px){
-    .nav a{
+    .signInnav a{
         display: none;
     }
-    .appname p{
+    .appname .signInpara{
         font-size: 1.5rem;
     }
     .LoginMain{
@@ -298,7 +299,7 @@ a{
         margin: 4rem 0 0 0;
         justify-content: space-between;
     }
-    .main{
+    .signInmain{
         width: 95%;
         padding: 0%;
         height: 90%;
@@ -317,10 +318,10 @@ a{
         font-size: 1rem;
         justify-content: center;
     }
-    .main .inputs{
+    .signInmain .inputs{
         width: 100%;
     }
-    .main .inputDiv{
+    .signInmain .inputDiv{
         height:3rem;
         padding: 0.75rem;
         display: flex;
@@ -330,7 +331,7 @@ a{
         background: rgb(70, 66, 82);
         border-radius: 0.75rem;
     }
-    .main .inputDiv input{
+    .signInmain .inputDiv input{
         font-size: 1rem;
     }
 
@@ -338,11 +339,11 @@ a{
         font-size: large;
     }
 
-    h1 a{
+    .h1tag .atag{
         font-size: 2.5rem;
     }
 
-    h1{
+    .h1tag{
         font-size: 2rem;
     }
 
@@ -355,14 +356,14 @@ a{
         width: 100%;
         gap: 0.75rem;
     }
-    .nav{
+    .signInnav{
         display: flex;
         gap: 5rem;
         position: absolute;
         top: 2rem;
         left: 1rem;
     }
-    .content{
+    .signIncontent{
         height: 100%;
         gap: 1rem;
         padding: 1rem;    
@@ -377,13 +378,13 @@ a{
         gap: 1rem;
         font-size: 1rem;
     }
-    h6 {
+    .h6tag {
         font-size: 1rem;
     }
     .inputs {
         gap: 1rem;
     }
-    h5 {
+    .h5tag {
         font-size: 1rem;
     }
 
@@ -391,7 +392,7 @@ a{
         font-family: Arial, Helvetica, sans-serif;
         font-size: 1rem;
     }
-    a{
+    .atag{
         font-size: 1rem;
     }
     #pwdcase {

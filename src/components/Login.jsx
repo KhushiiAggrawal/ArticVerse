@@ -19,27 +19,27 @@ const Login = () => {
     <>
       <div className="wrapper">
         {/* <img alt="bgImage" src="/imageset/Dotted-Line-PNG-Picture.png" /> */}
-        <div className="content">
-          <div className="nav">
+        <div className="signIncontent">
+          <div className="signInnav">
             <span className="appname">
               <i
                 className="fa-solid fa-circle fa-lg"
                 style={{ color: "#009eff" }}
               ></i>
-              <p> Artic</p>
+              <p className="signInpara"> Artic</p>
             </span>
           </div>
           <form className="LoginMain">
-            <h1>Login to Your Account</h1>
-            <h6>Your own world of imagination</h6>
-            <a id="googleLoginBtn" href="no-referer">
+            <h1 className="h1tag">Login to Your Account</h1>
+            <h6 className="h6tag">Your own world of imagination</h6>
+            <a className="atag" id="googleLoginBtn" href="no-referer">
               <i
                 style={{ color: "#009eff", marginRight: "0.5rem" }}
                 className="fa-brands fa-google icon "
               ></i>
               Login with Google
             </a>
-            <h5> OR </h5>
+            <h5 className="h5tag"> OR </h5>
 
             <div className="inputs">
               <div className="inputDiv email">
@@ -74,7 +74,7 @@ const Login = () => {
                 <input type="checkbox" name="remember" />
                 <label htmlFor="remember">Remember me</label>
               </div>
-              <a href="no-referer" className="borderLessbtn">
+              <a href="no-referer" className="borderLessbtn atag">
                 Forgot Password ?
               </a>
             </div>
