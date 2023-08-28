@@ -82,12 +82,12 @@ img{
 }
 
 .main{
-    padding: 0 0 3rem 2rem ;
-    height: 80%;
-    width: 50%;
+    padding: 0rem 4rem;
+    margin: 4rem 0;
+    width: 45%;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
 }
 .LoginMain{
     width: 35%;
@@ -160,7 +160,10 @@ a{
     margin:1rem 0 0 0;
     width: 100%;
 }
+.main .inputs{
+    margin:1rem 0 0 0;
 
+}
 .inputs{
     width: fit-content;
     display: flex;
@@ -203,6 +206,16 @@ a{
     border-radius: 0.5rem;
 }
 
+.main .inputs{
+    gap: 0.75rem;
+    margin:1rem 0 1.5rem 0;
+}
+
+.main .inputDiv{
+    height:2.5rem;
+    padding: 1rem;
+    gap: 1rem;
+}
 .createbtn,.loginBtn{
     height: 2.25rem;
     width: fit-content;
