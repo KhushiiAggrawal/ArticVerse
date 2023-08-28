@@ -291,9 +291,24 @@ a{
         margin: 4rem 0 0 0;
         justify-content: space-between;
     }
+    .main{
+        width: 95%;
+        padding: 0%;
+        height: 90%;
+        margin: 6rem 0 0 0;
+    }
+
     .LoginMain #googleLoginBtn {
         padding: 1rem;
         font-size: 1rem;
+    }
+
+    .createbtn{
+        width: 100%;
+        border-radius: 0.5rem;
+    }
+    .main .inputs{
+        width: 100%;
     }
     .nav{
         display: flex;
@@ -321,6 +336,7 @@ a{
         font-size: 1rem;
     }
     .inputs {
+
         gap: 1rem;
     }
     h5 {
