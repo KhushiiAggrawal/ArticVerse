@@ -315,6 +315,7 @@ a{
         border-radius: 0.75rem;
         height: 3rem;
         font-size: 1rem;
+        justify-content: center;
     }
     .main .inputs{
         width: 100%;
@@ -387,9 +388,6 @@ a{
     }
     #pwdcase {
         margin: 0.2rem 0 1rem 0;
-    }
-    .main h1{
-        align-self: center;
     }
     
     
