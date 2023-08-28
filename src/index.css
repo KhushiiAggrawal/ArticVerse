@@ -312,7 +312,7 @@ a{
 
     .createbtn{
         width: 100%;
-        border-radius: 0.5rem;
+        border-radius: 0.75rem;
         height: 3rem;
         font-size: 1rem;
     }
@@ -327,7 +327,7 @@ a{
         justify-content: space-between;
         align-items: center;
         background: rgb(70, 66, 82);
-        border-radius: 0.5rem;
+        border-radius: 0.75rem;
     }
     .main .inputDiv input{
         font-size: 1rem;
@@ -388,7 +388,9 @@ a{
     #pwdcase {
         margin: 0.2rem 0 1rem 0;
     }
-    
+    .main h1{
+        align-self: center;
+    }
     
     
  }
