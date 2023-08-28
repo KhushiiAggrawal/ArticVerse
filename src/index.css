@@ -332,7 +332,7 @@ a{
     }
 
     .name .inputDiv input{
-        width: 40%;
+        width: 100%;
         gap: 0.75rem;
     }
     .nav{
