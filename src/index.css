@@ -312,8 +312,8 @@ a{
         width: 100%;
     }
     .main .inputDiv{
-        height:2.75rem;
-        padding: 1rem;
+        height:3rem;
+        padding: 0.75rem;
         display: flex;
         gap: 0.75rem;
         justify-content: space-between;
