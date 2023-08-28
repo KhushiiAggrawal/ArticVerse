@@ -175,6 +175,7 @@ a{
 }
 
 .name{
+    width: 100%;
     display: flex;
     gap :0.5rem;
     justify-content: space-between;
@@ -310,6 +311,11 @@ a{
     .main .inputs{
         width: 100%;
     }
+
+    
+    .name .inputDiv input{
+        width: 40%;
+    }
     .nav{
         display: flex;
         gap: 5rem;
@@ -336,7 +342,6 @@ a{
         font-size: 1rem;
     }
     .inputs {
-
         gap: 1rem;
     }
     h5 {
