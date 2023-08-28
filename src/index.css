@@ -313,13 +313,16 @@ a{
     }
     .main .inputDiv{
         height:3rem;
-        padding: 0.75rem;
+        padding: 0.5rem;
         display: flex;
         gap: 0.75rem;
         justify-content: space-between;
         align-items: center;
         background: rgb(70, 66, 82);
         border-radius: 0.5rem;
+    }
+    .main .inputDiv input{
+        font-size: 1rem;
     }
 
     h1{
