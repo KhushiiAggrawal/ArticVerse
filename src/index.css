@@ -285,6 +285,12 @@ a{
 /* for mobile */
 
 @media(max-width:480px){
+    .nav a{
+        display: none;
+    }
+    .appname p{
+        font-size: 1.5rem;
+    }
     .LoginMain{
         width: 95%;
         padding: 0%;
@@ -308,13 +314,14 @@ a{
         width: 100%;
         border-radius: 0.5rem;
         height: 3rem;
+        font-size: 1rem;
     }
     .main .inputs{
         width: 100%;
     }
     .main .inputDiv{
         height:3rem;
-        padding: 0.5rem;
+        padding: 0.75rem;
         display: flex;
         gap: 0.75rem;
         justify-content: space-between;
